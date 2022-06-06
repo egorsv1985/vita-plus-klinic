@@ -424,7 +424,7 @@ body {
 
 .header {
   margin-top: 30px;
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 999;
 }
