@@ -55,26 +55,26 @@ function initSliders() {
 				prevEl: ".swiper-button-prev",
 			},
 
-			slidesPerView: 1.35,
+			slidesPerView: "auto",
 			spaceBetween: 10,
 			// Responsive breakpoints
 			breakpoints: {
-				// when window width is >= 480px
-				480: {
-					slidesPerView: 2,
-					spaceBetween: 10
+				// when window width is >= 1279 px
+				1279: {
+					// 		// slidesPerView: 2,
+					spaceBetween: 40
 				},
 
-				// when window width is >= 1024px
-				768: {
-					slidesPerView: 3,
-					spaceBetween: 30
-				},
-				// when window width is >= 1280px
-				1280: {
-					slidesPerView: 4,
-					spaceBetween: 40
-				}
+				// 	// when window width is >= 1024px
+				// 	768: {
+				// 		// slidesPerView: 3,
+				// 		spaceBetween: 30
+				// 	},
+				// 	// when window width is >= 1280px
+				// 	1280: {
+				// 		// slidesPerView: 4,
+				// 		spaceBetween: 40
+				// 	}
 			}
 		});
 
