@@ -1,0 +1,41 @@
+.page-doctors {
+	.doctors {
+		padding-top: 110px;
+		@include media (min, lg) {
+			padding-top: 220px;
+		}
+
+		// .doctors__title
+		&__title {
+			margin-bottom: 30px;
+			@include media (min, lg) {
+				margin-bottom: 45px;
+			}
+		}
+
+		// .doctors__wrapper
+		&__wrapper {
+			gap: 10px;
+			@include media (min, lg) {
+				gap: 40px;
+				display: grid;
+				grid-template-columns: repeat(4, auto);
+			}
+		}
+
+		.swiper {
+
+			// .swiper__item
+			&__item {
+				width: 280px;
+				padding-inline: 44px;
+
+				@include media (min, lg) {
+					width: 260px;
+					padding: 50px 20px 36px;
+				}
+			}
+
+		}
+	}
+}
