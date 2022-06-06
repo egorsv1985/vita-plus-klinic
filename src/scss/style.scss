@@ -155,9 +155,7 @@ body {
 @import "header";
 @import "footer";
 
-// Подключение стилей отдельных страниц
-@import "home";
-@import "doctors";
+
 
 
 // components
@@ -185,3 +183,8 @@ body {
 @import "./blocks/open-burger";
 @import "./blocks/services-accordeon";
 @import "./blocks/doctors-slide";
+
+// Подключение стилей отдельных страниц
+@import "home";
+@import "doctors";
+@import "reviews";
