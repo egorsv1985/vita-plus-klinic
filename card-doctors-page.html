@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Контакты</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220606215126">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220607234700">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,27 +63,63 @@
 
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__basket basket">
-				<div class="basket__container">
-					<div class="basket__wrapper">
-						<div class="basket__header">
-							<div class="basket__header-item">
-								<h2 class="basket__title title">Корзина</h2>
-								<div class="basket__breadcrumbs breadcrumbs">
-									<ul class="breadcrumbs__list">
-										<li><a href="#" class="breadcrumbs__link">Магазин</a></li>
-										<li><a href="#" class="breadcrumbs__link">Корзина</a></li>
-									</ul>
-								</div>
-							</div>
-							<!-- <div class="basket__header-item"></div> -->
+		<main class="page-contacts">
+			<section class="card" id="card">
+				<div class="container">
+					<nav class="card__breadcrumbs breadcrumb">
+						<ul>
+							<li class="breadcrumb__item">
+								<a class="breadcrumb__link" href="home.html">главная</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a class="breadcrumb__link" href="home.html#doctors">врачи</a>
+							</li>
+							<li class="breadcrumb__item">Константинопольский
+								Константин Владимирович</li>
+						</ul>
+					</nav>
+					<div class="card__wrapper">
+						<div class="card__grid">
+							<h2 class="card__title title">Константинопольский
+								Константин Владимирович</h2>
+							<h3 class="card__text text text--green">врач-стоматолог, хирург</h3>
+							<p class="card__text text">Александр Андреевич - врач-стоматолог-хирург Центра Стоматологии Vita + и
+								специалист высокого уровня в области хирургической стоматологии, обладающий большим опытом работы.
+								Основная специализации Александра Андреевича - это атравматичное и сложное удаление зубов. Такому
+								специалисту можно доверить сложные ситуации, не боясь осложнений, благодаря владению последними
+								технологиями в области хирургии.</p>
+							<a class="card__btn btn btn-primary" href="#" role="button">Записаться на прием</a>
+							<picture><source srcset="img/Konstantin.webp" type="image/webp"><img class="card__img" src="img/Konstantin.png" alt="doctor"></picture>
 						</div>
+						<div class="card__education">
+							<h2 class="card__title title">Основное образование:</h2>
+							<ul class="card__list">
+								<li class="card__item">
+									<h3 class="card__title title title--green">2015</h3>
+									<p class="card__text text">Диплом о техническом и профессиональном образовании с отличием от
+										ГККП Костанайский медицинский колледж по специальности «Стоматология» (г. Астана).</p>
+								</li>
+								<li class="card__item">
+									<h3 class="card__title title title--green">2016</h3>
+									<p class="card__text text">Диплом специалиста КрасГМУ им.профессора В.Ф Войно-Ясенецкого
+										Минздрава России по специальности "Стоматология", квалификации "Врач-стоматолог".</p>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-						<div class="basket__body body-basket">
-							<p class="body-basket__message">Ваша корзина пуста</p>
-							<a href="#" class="body-basket__link">Смотреть товары</a>
+				</div>
+			</section>
+			<section class="consultations" id="consultations">
+				<div class="container">
+					<div class="consultations__content consultations__content--color">
+						<h2 class="consultations__title title">Консультация, снимок и план лечения <span class="title--color">бесплатно</span></h2>
+						<p class="consultations__text text">Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма. Или позвоните нам сами — <a href="tel:+74999555067" class="consultations__link">+7 499955-50-67</a></p>
+						<div class="consultations__buttons">
+							<a class="consultations__btn btn consultations__btn-primary btn-primary" href="#" role="button">Телефон</a>
+							<a class="consultations__btn btn consultations__btn-secondary btn-secondary" href="#" role="button">Оставить заявку</a>
 						</div>
+						<picture><source srcset="img/consultations.webp" type="image/webp"><img class="consultations__img" src="img/consultations.png" alt=""></picture>
 					</div>
 				</div>
 			</section>
@@ -171,7 +207,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220606215126"></script>
+	<script src="js/app.min.js?_v=20220607234700"></script>
 </body>
 
 </html>
