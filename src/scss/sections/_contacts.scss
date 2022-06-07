@@ -24,6 +24,8 @@
 		@include media (min, lg) {
 			flex-direction: row;
 			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 20px;
 		}
 	}
 
