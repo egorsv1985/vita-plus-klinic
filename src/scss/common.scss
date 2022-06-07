@@ -15,6 +15,15 @@
 		font-size: 40px;
 		line-height: 120%;
 	}
+	&--green {
+
+
+		color: #53CD8B;
+		
+
+
+	}
+
 
 }
 
@@ -23,6 +32,7 @@
 	font-size: 8px;
 	line-height: 150%;
 	color: #707777;
+
 	@include media (min, lg) {
 		font-size: 16px;
 	}
@@ -45,7 +55,17 @@
 	@include media (min, lg) {
 		font-size: 16px;
 	}
-	&--decoration{
+
+	&--decoration {
 		text-decoration: underline;
+	}
+
+	&--green {
+
+
+		color: #53CD8B;
+		margin-bottom: 30px;
+
+
 	}
 }
