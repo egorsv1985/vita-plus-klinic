@@ -215,6 +215,9 @@ h6 {
     line-height: 120%;
   }
 }
+.title--green {
+  color: #53CD8B;
+}
 
 .subtitle {
   font-family: "OnestRegular";
@@ -246,6 +249,10 @@ h6 {
 }
 .text--decoration {
   text-decoration: underline;
+}
+.text--green {
+  color: #53CD8B;
+  margin-bottom: 30px;
 }
 
 .spollers__title {
@@ -685,6 +692,7 @@ body {
 }
 .breadcrumb ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .breadcrumb ul__item:last-child::before {
   content: ">";
@@ -1548,6 +1556,135 @@ body {
   width: 100%;
   height: 398px;
   border-radius: 40px;
+}
+
+.card {
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 1023px) {
+  .card {
+    padding-top: 220px;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .card__breadcrumbs {
+    margin-bottom: 60px;
+  }
+}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.card__grid {
+  display: grid;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 767px) {
+  .card__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .card__grid {
+    grid-template-columns: 56% 42%;
+    margin-bottom: 74px;
+  }
+}
+.card__title {
+  text-align: left;
+  max-width: 245px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 767px) {
+  .card__title {
+    max-width: unset;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .card__title {
+    margin-bottom: 25px;
+  }
+}
+.card__text {
+  text-align: left;
+}
+@media only screen and (min-width: 1023px) {
+  .card__text {
+    margin-bottom: 15px;
+  }
+}
+.card__btn {
+  width: 280px;
+  margin: 20px auto 0;
+}
+@media only screen and (min-width: 1023px) {
+  .card__btn {
+    margin-left: 0;
+    width: 268px;
+  }
+}
+.card__img {
+  max-width: 280px;
+  height: 274px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  grid-area: 3;
+}
+@media only screen and (min-width: 767px) {
+  .card__img {
+    grid-area: 1/2/5/3;
+    margin: 0;
+    justify-self: flex-end;
+    max-width: 460px;
+    height: 330px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .card__img {
+    height: 448px;
+  }
+}
+.card__education {
+  display: flex;
+  flex-direction: column;
+}
+.card__education .card__title {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1023px) {
+  .card__education .card__title {
+    margin-bottom: 50px;
+  }
+}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media only screen and (min-width: 1023px) {
+  .card__list {
+    gap: 30px;
+  }
+}
+.card__item {
+  display: flex;
+  gap: 30px;
+}
+@media only screen and (min-width: 767px) {
+  .card__item {
+    gap: 60px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .card__item {
+    gap: 210px;
+  }
+}
+.card__item .card__title {
+  margin-bottom: 0;
 }
 
 .header {
