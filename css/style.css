@@ -32,11 +32,11 @@
   font-family: "OnestMedium";
   font-display: swap;
   src: url("../fonts/OnestMedium.woff2") format("woff2"), url("../fonts/OnestMedium.woff") format("woff");
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "OnestRegular";
+  font-family: OnestRegular;
   font-display: swap;
   src: url("../fonts/OnestRegular.woff2") format("woff2"), url("../fonts/OnestRegular.woff") format("woff");
   font-weight: 400;
@@ -606,7 +606,7 @@ body {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 20px;
+  top: 5px;
   background-color: #53CD8B;
   border-radius: 50%;
 }
@@ -645,7 +645,12 @@ body {
 }
 
 .swiper-button-prev {
-  right: 0;
+  right: 55px;
+}
+@media only screen and (min-width: 1023px) {
+  .swiper-button-prev {
+    right: 80px;
+  }
 }
 .swiper-button-prev::after {
   transform: translate(-50%, -50%) rotate(180deg);
@@ -746,6 +751,15 @@ body {
   padding: 0 0.1875rem;
 }
 
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .header {
+  transform: none;
+  background-color: #fff;
+}
+
 .hero {
   position: relative;
 }
@@ -764,6 +778,9 @@ body {
     padding: 0 20px;
     margin-top: 40px;
   }
+}
+.hero .header {
+  width: unset;
 }
 .hero__wrapper {
   display: flex;
@@ -1238,7 +1255,7 @@ body {
     gap: 20px;
     width: 150px;
     right: -87%;
-    top: -514px;
+    top: -520px;
   }
 }
 .doctors__btn {
@@ -1514,13 +1531,12 @@ body {
   }
 }
 .contacts .nav__list {
-  padding-left: 70px;
+  padding-left: 0;
   gap: 12px;
 }
 @media only screen and (min-width: 1023px) {
   .contacts .nav__list {
     flex-direction: column;
-    padding-left: 100px;
     gap: 18px;
   }
 }
@@ -1528,18 +1544,34 @@ body {
   font-size: 12px;
   line-height: 18px;
   padding: 12px 0;
+  padding-left: 70px;
 }
 @media only screen and (min-width: 1023px) {
   .contacts .nav__item {
     font-size: 16px;
     line-height: 20px;
+    padding-left: 100px;
   }
+}
+.contacts .nav__item::after {
+  content: "";
+  display: block;
+  width: 79%;
+  height: 1px;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  background-color: rgba(15, 47, 46, 0.08);
+  transform: translateX(-50%);
+}
+.contacts .nav__item:last-child::after {
+  display: none;
 }
 .contacts .nav__item--work::before, .contacts .nav__item--mail::before, .contacts .nav__item--tel::before, .contacts .nav__item--map::before {
   content: "";
   display: block;
-  top: 12px;
-  left: -35px;
+  top: 15px;
+  left: 33px;
 }
 .contacts__social {
   padding-left: 35px;
@@ -1688,20 +1720,23 @@ body {
 }
 
 .header {
-  margin-top: 30px;
   position: fixed;
   width: 100%;
   z-index: 999;
+  padding: 30px 0;
 }
 @media only screen and (min-width: 1279px) {
   .header {
-    margin-top: 40px;
+    padding: 40px 0;
   }
 }
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__burger {
+  transition: transform 0.4s;
 }
 .header__block {
   width: 100%;
@@ -1728,6 +1763,12 @@ body {
 }
 .header__nav {
   display: flex;
+}
+
+@media only screen and (min-width: 1279px) {
+  .wrapper-home .header {
+    margin-top: 40px;
+  }
 }
 
 .footer {
@@ -1965,11 +2006,22 @@ body {
   top: 0;
   left: -30px;
 }
+@media only screen and (min-width: 1023px) {
+  .nav__tel {
+    font-family: "OnestMedium";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #0F2F2E;
+  }
+}
+
 .nav--top {
   color: #707777;
   border-bottom: 1px solid rgba(15, 47, 46, 0.08);
   padding-bottom: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .nav--bottom {
@@ -1981,12 +2033,6 @@ body {
 .nav--bottom .nav__list {
   gap: 85px;
 }
-@media only screen and (min-width: 1279px) {
-  .nav--bottom .nav__list {
-    gap: 106px;
-  }
-}
-
 .logo__img {
   width: 40px;
 }
@@ -2001,7 +2047,7 @@ body {
   height: 100%;
   overflow: hidden;
   position: fixed;
-  background-color: #0F2F2E;
+  background-color: #0F2F2E !important;
   margin-top: 0;
   padding-top: 30px;
 }
@@ -2279,6 +2325,9 @@ body {
     padding-left: 50px;
     max-width: 400px;
   }
+}
+.form__input:focus, .form__input:focus-visible {
+  border-color: #0F2F2E;
 }
 .form__input::placeholder, .form__textarea::placeholder {
   font-family: "OnestMedium";

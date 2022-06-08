@@ -3882,4 +3882,19 @@
         }
       }
     })();
+  const pe = document.body,
+    ue = "scroll-up",
+    he = "scroll-down";
+  let fe = 0;
+  window.addEventListener("scroll", () => {
+    const e = window.pageYOffset;
+    e <= 0
+      ? pe.classList.remove(ue)
+      : (e > fe && !pe.classList.contains(he)
+          ? (pe.classList.remove(ue), pe.classList.add(he))
+          : e < fe &&
+            pe.classList.contains(he) &&
+            (pe.classList.remove(he), pe.classList.add(ue)),
+        (fe = e));
+  });
 })();
