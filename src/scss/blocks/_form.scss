@@ -68,6 +68,10 @@
 			padding-left: 50px;
 			max-width: 400px;
 		}
+		&:focus,
+		&:focus-visible{
+			border-color: #0F2F2E;
+		}
 
 
 	}

@@ -91,7 +91,7 @@
 	@include wh(40px);
 
 	position: absolute;
-	top: 20px;
+	top: 5px;
 
 
 	background-color: #53CD8B;
@@ -121,7 +121,10 @@
 
 .swiper-button-prev {
 
-	right: 0;
+	right: 55px;
+	@include media (min, lg) {
+		right: 80px;
+	}
 
 	&::after {
 		transform: translate(-50%, -50%) rotate(180deg);

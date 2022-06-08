@@ -5,6 +5,7 @@
 		@include flex ($flex-direction: column);
 		gap: 50px;
 		padding-left: 30px;
+
 		@include media (min, xl) {
 			gap: 106px;
 			flex-direction: row;
@@ -17,9 +18,7 @@
 	}
 
 	// .nav__link
-	&__link {
-		
-	}
+	&__link {}
 
 	// .nav__item--map
 	&__item--map::before {
@@ -84,14 +83,28 @@
 
 
 	// .nav__tel
-	&__tel {}
+	&__tel {
+		@include media (min, lg) {
+
+
+			font-family: 'OnestMedium';
+			font-style: normal;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: right;
+
+			color: #0F2F2E;
+
+
+		}
+	}
 }
 
 .nav--top {
 	color: #707777;
 	border-bottom: 1px solid rgba(15, 47, 46, 0.08);
 	padding-bottom: 20px;
-	margin-bottom: 22px;
+	margin-bottom: 30px;
 
 
 
@@ -99,14 +112,16 @@
 
 .nav--bottom {
 	justify-content: space-between;
-	.nav__link{
+
+	.nav__link {
 		font-size: 16px;
 	}
+
 	.nav__list {
 		gap: 85px;
+
 		@include media (min, xl) {
-			gap: 106px;
+			// gap: 106px;
 		}
 	}
 }
-
