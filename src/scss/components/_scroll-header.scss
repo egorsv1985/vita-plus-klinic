@@ -5,6 +5,11 @@
 .scroll-up .header {
 	transform: none;
 	background-color: #fff;
+	padding: 15px 0;
+	margin-top: 0 !important;
+	max-width: 1400px;
+	left: 50%;
+    transform: translateX(-50%);
 	
 }
 

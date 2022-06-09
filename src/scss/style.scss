@@ -160,6 +160,7 @@ body {
 @import "./components/scroll-header";
 
 
+
 // sections
 
 @import "./sections/hero";
@@ -171,6 +172,9 @@ body {
 @import "./sections/forms";
 @import "./sections/contacts";
 @import "./sections/card";
+
+
+@import "./components/popup";
 
 // block
 @import "header";
