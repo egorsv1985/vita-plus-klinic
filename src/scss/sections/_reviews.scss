@@ -43,11 +43,14 @@
 		background-color: #FFFFFF;
 		border-radius: 30px;
 		max-width: 280px;
-
 		@include media (min, lg) {
-			max-width: 560px;
+			max-width: 460px;
 			border-radius: 40px;
-			padding: 50px 0 50px 60px;
+			padding: 50px 20px 50px 60px;
+		}
+
+		@include media (min, 1180px) {
+			max-width: 560px;
 
 		}
 
@@ -124,7 +127,7 @@
 	&__box-text {
 		@include flex ($flex-direction: column);
 
-		@include media (min, lg) {
+		@include media (min, 1180px) {
 			flex-direction: row;
 		}
 	}
@@ -151,9 +154,9 @@
 		font-size: 12px;
 		line-height: 150%;
 
-		@include media (min, lg) {
+		@include media (min, 1180px) {
 			font-size: 16px;
-			@include pos (relative, $top: -5px, $right: 140px);
+			@include pos (relative, $top: -5px, $right: 75px);
 			align-self: flex-end;
 		}
 	}

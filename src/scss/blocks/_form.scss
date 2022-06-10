@@ -7,7 +7,7 @@
 	}
 
 	@include media (min, xl) {
-		gap: 40px;
+		gap: 20px;
 	}
 
 	// .form__box
@@ -17,7 +17,7 @@
 
 		@include media (min, md) {
 			width: 50%;
-			gap: 40px;
+			gap: 20px;
 
 			@include media (min, xl) {
 				gap: 20px;
@@ -42,6 +42,7 @@
 
 		&--relative {
 			position: relative;
+			max-width: 400px;
 
 		}
 
@@ -188,10 +189,12 @@
 		@include media (min, lg) {
 			flex-direction: row;
 			gap: 10px;
+			margin-top: 20px;
+
 		}
 
 		@include media (min, xl) {
-			margin-top: 20px;
+			
 			gap: 30px;
 		}
 	}
