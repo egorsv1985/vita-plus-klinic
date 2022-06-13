@@ -1386,9 +1386,14 @@ body {
 }
 @media only screen and (min-width: 1023px) {
   .reviews__box {
-    max-width: 560px;
+    max-width: 460px;
     border-radius: 40px;
-    padding: 50px 0 50px 60px;
+    padding: 50px 20px 50px 60px;
+  }
+}
+@media only screen and (min-width: 1180px) {
+  .reviews__box {
+    max-width: 560px;
   }
 }
 .reviews__inner {
@@ -1453,7 +1458,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1180px) {
   .reviews__box-text {
     flex-direction: row;
   }
@@ -1478,12 +1483,12 @@ body {
   font-size: 12px;
   line-height: 150%;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1180px) {
   .reviews__link {
     font-size: 16px;
     position: relative;
     top: -5px;
-    right: 140px;
+    right: 75px;
     align-self: flex-end;
   }
 }
@@ -2439,7 +2444,7 @@ body {
 }
 @media only screen and (min-width: 1279px) {
   .form {
-    gap: 40px;
+    gap: 20px;
   }
 }
 .form__box {
@@ -2450,7 +2455,7 @@ body {
 @media only screen and (min-width: 767px) {
   .form__box {
     width: 50%;
-    gap: 40px;
+    gap: 20px;
   }
 }
 @media only screen and (min-width: 767px) and (min-width: 1279px) {
@@ -2471,6 +2476,7 @@ body {
 }
 .form__wrap--relative {
   position: relative;
+  max-width: 400px;
 }
 .form__input {
   padding-left: 30px;
@@ -2585,11 +2591,11 @@ body {
   .form__inner {
     flex-direction: row;
     gap: 10px;
+    margin-top: 20px;
   }
 }
 @media only screen and (min-width: 1279px) {
   .form__inner {
-    margin-top: 20px;
     gap: 30px;
   }
 }
